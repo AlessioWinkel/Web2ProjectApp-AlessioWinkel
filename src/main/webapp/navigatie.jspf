@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li class="navigatie-link"><a href="Controller?command=index">Home</a></li>
+        <li class="navigatie-link"><a href="Controller?command=VoegToe">Voeg Toe</a></li>
+        <li class="navigatie-link"><a href="Controller?command=zoekPagina">Zoek</a></li>
+        <li class="navigatie-link"><a href="Controller?command=Overzicht">Overzicht</a></li>
+    </ul>
+</nav>
