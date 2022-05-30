@@ -10,12 +10,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Voeg Toe</title>
+    <title>Pas afspraak aan</title>
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <body class="container">
 <header>
-    <h1 class="header1" id="header1">Voeg uw afspraak toe</h1>
+    <h1 class="header1" id="header1">Pas uw afspraak aan</h1>
     <jsp:include page="navigatie.jspf"/>
 </header>
 <main>
@@ -30,43 +30,22 @@
     </c:if>
     <section class="contact-form-box">
         <div class="container-contact">
-            <div class="contactinfo">
-                <div class="box">
-                    <div class="text">
-                        <h3>Adres</h3>
-                        <p>Neerstraat 7, 3980 Tessenderlo</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="text">
-                        <h3>Telefoon</h3>
-                        <p>+32 0479767785</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>dehaardracht@hotmail.com</p>
-                    </div>
-                </div>
-            </div>
             <section class="contactform">
-                <form method="POST" action="Controller?command=VoegToe" novalidate>
-                    <h2>Verzend bericht</h2>
+                <form method="POST" action="Controller?command=pasAan" novalidate>
+                    <h2>Pas afspraak aan</h2>
                     <div class="inputbox">
                         <input type="text" name="naam" id="naamVak"
-                               value="${naamPreviousValue}" class="${naamHasErrors? 'error' : ''}">
+                               value="${param.naam}" class="${naamHasErrors? 'error' : ''}">
                         <span>Volledige naam</span>
                     </div>
                     <div class="inputbox">
                         <input type="text" name="aantalPersonen" id="aantalPersonenVak"
-                               value="${aantalPersonenPreviousValue}" class="${aantalPersonenHasErrors? 'error' : ''}">
+                               value="${param.aantalPersonen}" class="${aantalPersonenHasErrors? 'error' : ''}">
                         <span>Aantal Personen</span>
                     </div>
                     <div class="inputbox">
                         <input type="text" name="telefoonNummer" id="telefoonNummerVak"
-                               value="${telefoonNummerPreviousValue}" class="${telefoonNummerHasErrors? 'error' : ''}">
+                               value="${param.telefoonNummer}" class="${telefoonNummerHasErrors? 'error' : ''}">
 
                         <span>Telefoonnummer</span>
                     </div>

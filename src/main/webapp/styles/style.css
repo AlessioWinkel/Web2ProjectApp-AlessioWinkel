@@ -1,0 +1,247 @@
+body {
+    background-color: #2d283e;
+}
+
+.header1 {
+    color: #daa520FF;
+    text-align: center;
+}
+
+ul {
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 1%;
+}
+
+.navigatie-link {
+    border-bottom: 1px solid transparent;
+    transition: color 0.5s;
+    list-style: none;
+
+}
+
+.navigatie-link a {
+    color: #DAA520FF;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navigatie-link:hover {
+    border-bottom: 1px solid #DAA520FF;
+}
+.navigatie-link a:hover {
+    color: #FFD700FF;
+}
+
+.random-tekst {
+    text-align: center;
+    color: #daa520;
+}
+
+.footer {
+    background-color: #111;
+    height: 170px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.footercontainer h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.footercontainer p {
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    color: #fff;
+    padding-right: 2%;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.fb, .insta {
+    padding-top: 0.5em;
+    margin: 0.5em;
+}
+
+.contact-form-box {
+    position: relative;
+    height: 400px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form-box .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-form-box .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #daa520;
+}
+.contact-form-box .content p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #daa520;
+}
+
+.container-contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: #46344E;
+}
+
+.container-contact .contactinfo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact .contactinfo .box {
+    position: relative;
+    display: flex;
+}
+.container-contact .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    color: #daa520;
+}
+
+.container-contact .contactinfo .box .text h3 {
+    font-weight: 500;
+}
+
+.contactform {
+    width: 40%;
+    padding: 50px;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #daa520;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span {
+    color: #DAA520FF;
+    font-size: 15px;
+    transform: translateY(-25px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+th, td{
+    color: #daa520;
+    background-color: transparent;
+}
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 450px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.table thead tr{
+    background-color: #46344E;
+    color: #daa520;
+    text-align: left;
+}
+.table th, .table td{
+    padding: 12px 15px;
+}
+
+.tabel-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aantalPersonen, .meestePersonen {
+    color: #daa520;
+}
