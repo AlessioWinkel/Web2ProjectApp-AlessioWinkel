@@ -20,51 +20,51 @@
 </header>
 <main>
     <c:if test="${not empty errors}">
-        <div id="error" >
+        <section id="error" >
             <ul>
                 <c:forEach items="${errors}" var="error">
                     <li>${error}</li>
                 </c:forEach>
             </ul>
-        </div>
+        </section>
     </c:if>
     <section class="contact-form-box">
-        <div class="container-contact">
+        <section class="container-contact">
             <section class="contactform">
                 <form method="POST" action="Controller?command=pasAan" novalidate>
                     <h2>Pas afspraak aan</h2>
-                    <div class="inputbox">
+                    <section class="inputbox">
                         <input type="text" name="naam" id="naamVak"
                                value="${param.naam}" class="${naamHasErrors? 'error' : ''}">
                         <span>Volledige naam</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="text" name="aantalPersonen" id="aantalPersonenVak"
                                value="${param.aantalPersonen}" class="${aantalPersonenHasErrors? 'error' : ''}">
                         <span>Aantal Personen</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="text" name="telefoonNummer" id="telefoonNummerVak"
                                value="${param.telefoonNummer}" class="${telefoonNummerHasErrors? 'error' : ''}">
 
                         <span>Telefoonnummer</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="submit" name="knop" id="verstuur" value="Verstuur">
-                    </div>
+                    </section>
                 </form>
             </section>
-        </div>
+        </section>
     </section>
 </main>
 
 <footer class="footer" role="contentinfo">
-    <div class="footercontainer">
+    <section class="footercontainer">
         <h2>De haardracht</h2>
         <p>Neerstraat 7, 3980 Tessenderlo</p>
         <p>Email: dehaardracht@hotmail.com</p>
 
-    </div>
+    </section>
 </footer>
 </body>
 </html>

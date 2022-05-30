@@ -42,7 +42,7 @@
                     <td>${afspraak.telefoonNummer}</td>
                     <td>${afspraak.aantalPersonen}</td>
                     <td>
-                        <a href="Controller?command=aanpassen&naam=${afspraak.naam}&telefoonNummer=${afspraak.telefoonNummer}&aantalPersonen=${afspraak.aantalPersonen}">
+                        <a href="Controller?command=aanpassen&naam=${afspraak.naam}&telefoonNummer=${afspraak.telefoonNummer}&aantalPersonen=${afspraak.aantalPersonen}" id="pasAanKnop">
                             Pas aan
                         </a>
                     </td>
@@ -65,12 +65,12 @@
 
 
 <footer class="footer" role="contentinfo">
-    <div class="footercontainer">
+    <section class="footercontainer">
         <h2>De haardracht</h2>
         <p>Neerstraat 7, 3980 Tessenderlo</p>
         <p>Email: dehaardracht@hotmail.com</p>
 
-    </div>
+    </section>
 </footer>
 
 </body>

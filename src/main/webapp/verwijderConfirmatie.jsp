@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Verwijder Confirmatie</title>
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <header>
@@ -22,7 +22,9 @@
         <a href="Controller?command=verwijder&naam=${param.naam}" id="verwijderConfirmatie">
             Ja
         </a></p>
-        <p>Cancel</p>
+        <p>
+            <a href="Controller?command=Overzicht" id="verwijderCancel">Cancel</a>
+        </p>
 
     </article>
 </main>

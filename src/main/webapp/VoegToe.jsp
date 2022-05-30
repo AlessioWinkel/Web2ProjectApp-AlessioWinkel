@@ -29,63 +29,63 @@
         </div>
     </c:if>
     <section class="contact-form-box">
-        <div class="container-contact">
-            <div class="contactinfo">
-                <div class="box">
-                    <div class="text">
+        <section class="container-contact">
+            <section class="contactinfo">
+                <section class="box">
+                    <section class="text">
                         <h3>Adres</h3>
                         <p>Neerstraat 7, 3980 Tessenderlo</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="text">
+                    </section>
+                </section>
+                <section class="box">
+                    <section class="text">
                         <h3>Telefoon</h3>
                         <p>+32 0479767785</p>
-                    </div>
-                </div>
+                    </section>
+                </section>
 
-                <div class="box">
-                    <div class="text">
+                <section class="box">
+                    <section class="text">
                         <h3>Email</h3>
                         <p>dehaardracht@hotmail.com</p>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                </section>
+            </section>
             <section class="contactform">
                 <form method="POST" action="Controller?command=VoegToe" novalidate>
                     <h2>Verzend bericht</h2>
-                    <div class="inputbox">
+                    <section class="inputbox">
                         <input type="text" name="naam" id="naamVak"
                                value="${naamPreviousValue}" class="${naamHasErrors? 'error' : ''}">
                         <span>Volledige naam</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="text" name="aantalPersonen" id="aantalPersonenVak"
                                value="${aantalPersonenPreviousValue}" class="${aantalPersonenHasErrors? 'error' : ''}">
                         <span>Aantal Personen</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="text" name="telefoonNummer" id="telefoonNummerVak"
                                value="${telefoonNummerPreviousValue}" class="${telefoonNummerHasErrors? 'error' : ''}">
 
                         <span>Telefoonnummer</span>
-                    </div>
-                    <div class="inputbox">
+                    </section>
+                    <section class="inputbox">
                         <input type="submit" name="knop" id="verstuur" value="Verstuur">
-                    </div>
+                    </section>
                 </form>
             </section>
-        </div>
+        </section>
     </section>
 </main>
 
 <footer class="footer" role="contentinfo">
-    <div class="footercontainer">
+    <section class="footercontainer">
         <h2>De haardracht</h2>
         <p>Neerstraat 7, 3980 Tessenderlo</p>
         <p>Email: dehaardracht@hotmail.com</p>
 
-    </div>
+    </section>
 </footer>
 </body>
 </html>

@@ -47,12 +47,12 @@
 </main>
 
 <footer class="footer" role="contentinfo">
-    <div class="footercontainer">
+    <section class="footercontainer">
         <h2>De haardracht</h2>
         <p>Neerstraat 7, 3980 Tessenderlo</p>
         <p>Email: dehaardracht@hotmail.com</p>
 
-    </div>
+    </section>
 </footer>
 </body>
 </html>

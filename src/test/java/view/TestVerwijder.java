@@ -31,8 +31,19 @@ public class TestVerwijder {
     }
 
     @Test
-    public void test_verwijder_paginas_werken() {
+    public void test_confirmatie_tonen_na_verwijder_knop(){
         driver.get(url+"Web2ProjectApp_war_exploded/Controller?command=Overzicht");
+        driver.findElement(By.id("verwijderKnop")).click();
+        assertEquals("Verwijder Confirmatie", driver.getTitle());
+    }
+
+    @Test
+    public void test_na_verwijderen_terug_op_homepage() {
+        driver.get(url+"Web2ProjectApp_war_exploded/Controller?command=Overzicht");
+
+        ArrayList<WebElement> p2 =
+                (ArrayList<WebElement>) driver.findElements(By.tagName("p"));
+        assertTrue(containsWebElementsWithText(p2,"Aantal afspraken dat gemaakt zijn: 4"));
 
         driver.findElement(By.id("verwijderKnop")).click();
         driver.findElement(By.id("verwijderConfirmatie")).click();
@@ -41,6 +52,14 @@ public class TestVerwijder {
         ArrayList<WebElement> p =
                 (ArrayList<WebElement>) driver.findElements(By.tagName("p"));
         assertTrue(containsWebElementsWithText(p,"Aantal afspraken dat gemaakt zijn: 3"));
+
+    }
+    @Test
+    public void test_toon_overizcht_wanneer_cancel(){
+        driver.get(url+"Web2ProjectApp_war_exploded/Controller?command=Overzicht");
+        driver.findElement(By.id("verwijderKnop")).click();
+        driver.findElement(By.id("verwijderCancel")).click();
+        assertEquals("Overzicht afspraken", driver.getTitle());
 
     }
 
